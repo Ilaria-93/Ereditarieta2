@@ -5,10 +5,11 @@ metodo calcolaArea() per calcolare l'area del rettangolo.*/
 
 public class Main {
     public static void main(String[] args) {
-        Forma forma = new Forma();
-        forma.calcolaArea(10,10);
 
-        Rettangolo rettangolo = new Rettangolo();
-        rettangolo.calcolaArea(3,5);
+        Rettangolo rettangolo = new Rettangolo(3,5);
+        System.out.println(rettangolo.calcolaArea());
+
+        Triangolo triangolo = new Triangolo(2,5);
+        System.out.println(triangolo.calcolaArea());
     }
 }
